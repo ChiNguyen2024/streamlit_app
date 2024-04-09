@@ -1,11 +1,10 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 from streamlit_extras.stateful_button import button
 
 st.title('Cardiovascular Diseases incidence')
 
-df= pd.read_csv(r'C:\Users\sour\Downloads\CVD_cleaned.csv')
+df= pd.read_csv('./data/CVD_cleaned.csv')
 df.drop(df.columns[[2,4,5,6,7,8,10,13,14,15,16,17,18]], axis=1, inplace=True)
 st.dataframe(df)
 
