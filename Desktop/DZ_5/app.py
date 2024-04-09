@@ -4,7 +4,7 @@ from streamlit_extras.stateful_button import button
 
 st.title('Cardiovascular Diseases incidence')
 
-df= pd.read_csv('.Desktop/DZ_5/data/CVD_cleaned.csv')
+df= pd.read_csv('./Desktop/DZ_5/data/CVD_cleaned.csv')
 df.drop(df.columns[[2,4,5,6,7,8,10,13,14,15,16,17,18]], axis=1, inplace=True)
 st.dataframe(df)
 
